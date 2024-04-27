@@ -14,6 +14,7 @@ const SingleWeather: FC<CityWeatherProp> = ({city, onRemove, moveToTop}: CityWea
             <td>{city.ime}</td>
             <td>{city.temperatura ?? "Nepoznato"}</td>
             <td>{city.vlaznostVazduha ?? "Nepoznato"}</td>
+            <td>{city.vremenskiUslovi}</td>
             <td>
               <button onClick={(onRemove)}>Remove</button>
             </td>
